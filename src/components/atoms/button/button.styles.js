@@ -20,4 +20,5 @@ export const ButtonContainer = styled.button`
   min-width: 120px;
   background-color: ${({ variant }) => variant && colors[variant]};
   box-sizing: border-box;
+  font-size: 30px;
 `;
