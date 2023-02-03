@@ -87,7 +87,6 @@
     "webpack": "5.75.0"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "design-system@0.1.0",
   "description": "A reusable UI library for Ozow",
   "main": "dist/index",
   "repository": "https://github.com/sibabale/ozow-ui.git",
