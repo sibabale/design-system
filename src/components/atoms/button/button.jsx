@@ -16,11 +16,11 @@ export const Button = ({ variant, size, label, icon }) => {
 
 Button.propTypes = {
   /**
-   * What background color to use
+   * What variant color to use?
    */
   variant: PropTypes.string.isRequired,
   /**
-   * How large should the button be?
+   * What scale should the button be?
    */
   size: PropTypes.oneOf(["small", "medium", "large"]),
   /**
@@ -34,8 +34,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  size: "small",
+  size: "medium",
+  label: "Click Me",
   variant: "primary",
   onClick: undefined,
-  backgroundColor: null,
 };

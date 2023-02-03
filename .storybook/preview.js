@@ -1,7 +1,7 @@
 import { addDecorator } from "@storybook/react";
 import { MemoryRouter } from "react-router";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
-// import "!style-loader!css-loader!../src/styles/reset.css";
+import "!style-loader!css-loader!../src/styles/reset.css";
 import { GlobalStyle } from "../src/shared/global";
 
 const customViewports = {

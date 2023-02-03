@@ -38,7 +38,7 @@ export const MenuIconContainer = styled.div`
   }
 `;
 
-export const ButtonsContainer = styled.div`
+export const ChildrenContainer = styled.div`
   display: flex;
   align-items: center;
   /* Tablets and mobile phones */

@@ -1,17 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import * as styles from "./styles/global.styles";
+import * as global from "./shared/global";
+// import * as animation from "./shared/animation";
+// import * as icons from "./shared/icons";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export { styles, global };
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export * from "../src/components/atoms/button/button";
+export * from "../src/components/molecules/nav_bar";
+export * from "../src/components/pages/home/home";

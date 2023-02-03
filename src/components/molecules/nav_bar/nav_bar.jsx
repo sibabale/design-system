@@ -5,7 +5,7 @@ import {
   NavLink,
   NavLinks,
   NavBarContainer,
-  ButtonsContainer,
+  ChildrenContainer,
   MenuIconContainer,
   ThemeIconContainer,
 } from "./nav_bar.styles";
@@ -16,6 +16,9 @@ import Logo from "../../atoms/images/logo/logo";
 import colors from "../../../theme/colors.json";
 import LightMode from "../../atoms/icons/light_mode";
 
+/**
+ * This component is used for navigating to different pages of an application
+ */
 export const NavBar = ({ showLogo, links, children }) => {
   const [theme, setTheme] = useState("light_theme");
   return (
@@ -37,7 +40,7 @@ export const NavBar = ({ showLogo, links, children }) => {
             </NavLink>
           ))}
       </NavLinks>
-      <ButtonsContainer>
+      <ChildrenContainer>
         <ThemeIconContainer>
           {theme === "light_theme" ? (
             <div onClick={() => setTheme("dark_theme")}>
@@ -50,7 +53,7 @@ export const NavBar = ({ showLogo, links, children }) => {
           )}
         </ThemeIconContainer>
         {children}
-      </ButtonsContainer>
+      </ChildrenContainer>
       <MenuIconContainer>
         <Menu />
       </MenuIconContainer>
@@ -60,7 +63,7 @@ export const NavBar = ({ showLogo, links, children }) => {
 
 NavBar.propTypes = {
   /**
-   * What background color to use
+   * Navigation link linking to different pages
    */
   links: PropTypes.array.isRequired,
   /**
@@ -74,10 +77,8 @@ NavBar.propTypes = {
 };
 
 NavBar.defaultProps = {
-  size: "small",
-  variant: "primary",
-  onClick: undefined,
-  backgroundColor: null,
+  links: [],
+  showLogo: true,
 };
 
 export default NavBar;
