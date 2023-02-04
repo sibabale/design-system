@@ -1,34 +1,37 @@
 import React from "react";
-import { Button } from "../../atoms/button/button";
-import { NavBar as NavBarComponent } from "./nav_bar";
+import styled from "styled-components";
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+import { Button } from "../../atoms/button/button";
+import { NavBar } from "./nav_bar";
+
 export default {
   title: "Design System/Molecules/Navigation Bar",
-  component: NavBarComponent,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: "color" },
+  component: NavBar,
+  parameters: {
+    componentSubtitle: "Main navigation component for an application",
   },
   subcomponents: { Button },
 };
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template = (args) => <NavBarComponent {...args} />;
-
-export const NavigationBar = Template.bind({});
-NavigationBar.args = {
-  links: [
-    { text: "Individuals", href: "individuals" },
-    { text: "Businesses", href: "businesses" },
-    { text: "Clients", href: "clients" },
-    { text: "Company", href: "company" },
-  ],
-  showLogo: true,
-  children: (
-    <div>
+export const NavigationBar = (args) => (
+  <NavBar
+    links={[
+      { text: "Individuals", href: "individuals" },
+      { text: "Businesses", href: "businesses" },
+      { text: "Clients", href: "clients" },
+      { text: "Company", href: "company" },
+    ]}
+    showLogo="true"
+  >
+    <ButtonSpacer>
       <Button size="medium" variant="tertiary" label="Login" />
+    </ButtonSpacer>
+    <ButtonSpacer>
       <Button size="medium" variant="primary" label="Get Started" />
-    </div>
-  ),
-};
+    </ButtonSpacer>
+  </NavBar>
+);
+
+const ButtonSpacer = styled.div`
+  padding: 0 10px;
+`;

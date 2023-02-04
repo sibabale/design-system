@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# Ozow UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="src/assets/images/design-system.webp" width="100%" />
+<small style="font-size: 10px">Art by <a href="https://dribbble.com/codycai">Codi Cai</a>
+  </small>
 
-## Available Scripts
+[![NPM](https://img.shields.io/npm/v/@storybook/design-system.svg)](https://www.npmjs.com/package/@storybook/design-system) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-In the project directory, you can run:
+##### Ozow UI is a design system that is meant to be a reusable set of components that can be quickly used to build and scaffold any application. Current it is used to demo a UI library for [Ozow](https://ozow.com).
 
-### `npm start`
+Note: this design system is not used in Ozow's UI. This is purely for experimental reasons and is not the property of Ozow.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Building components
 
-### `npm test`
+- ⚛️ [React |](https://reactjs.org/) declarative component-centric UI
+- 📚 [Storybook |](https://storybook.js.org) for UI component development and [auto-generated docs](https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a)
+- <💅🏾> [Styled Components |](https://www.styled-components.com/) for component-scoped styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Maintaining the system
 
-### `npm run build`
+- 📦 [NPM |](https://www.npmjs.com/) for [packaging and distribution](https://blog.hichroma.com/how-packaging-makes-it-dead-simple-to-share-ui-components-29912593539d)
+- [Auto |](https://intuit.github.io/auto/)Streamline release workflows and automate publish constantly!
+- ✅ [Chromatic |](https://www.chromatic.com/) to prevent UI bugs in components (by Storybook maintainers)
+- 🚥 [GitHub Actions |](https://github.com/features/actions) Continuous integration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Our Approach
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="src/assets/images/atomic-design.webp" width="100%" />
+<small style="font-size: 10px">Art by <a href="https://dribbble.com/codycai">Codi Cai</a>
+</small>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We use Atomic Design by [Bred Frost](https://bradfrost.com/) to scope and organise our UI components.
 
-### `npm run eject`
+## Why
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Storybook design system codifies existing UI components into a central, well-maintained repository. It is built to address having to paste the same components into multiple projects again and again. This simplifies building UI's with Storybook's design patterns.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### What we're doing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Build and maintain a design system in the open
+- Share UI components between multiple apps
+- Dogfood upcoming Storybook features
+- Welcome contributors of all levels and backgrounds
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### What we're not doing
 
-## Learn More
+- Rewrite all new components from scratch
+- Overhaul the visual design of components
+- Typescript (the consumer apps don't use it)
+- Compete with more general design systems like ANT or Material.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn add --save @sibabale/design-system
+```
 
-### Code Splitting
+or
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm install --save @sibabale/design-system
+```
 
-### Analyzing the Bundle Size
+## Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+yarn run storybook
+```
 
-### Making a Progressive Web App
+or
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm run storybook
+```
 
-### Advanced Configuration
+## Test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+yarn test-storybook --watch
+```
 
-### Deployment
+or
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm test-storybook --watch
+```
 
-### `npm run build` fails to minify
+## Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Storybook
+
+```bash
+yarn run build-storybook
+```
+
+or
+
+```bash
+npm run build-storybook
+```
+
+- Storybook Docs
+
+```bash
+yarn run build-storybook-docs
+```
+
+or
+
+```bash
+npm run build-storybook-docs
+```
+
+## Deploy
+
+- Chromatic
+
+```bash
+npm run chromatic
+```
+
+NB: Create a .env file and add a `CHROMATIC_PROJECT_TOKEN`
+
+## License
+
+MIT © [Sibabale](https://github.com/sibabale)
