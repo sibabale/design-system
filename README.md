@@ -14,15 +14,16 @@ Note: this design system is not used in Ozow's UI. This is purely for experiment
 
 Building components
 
-- ⚛️ [React](https://reactjs.org/) declarative component-centric UI
-- 📚 [Storybook](https://storybook.js.org) for UI component development and [auto-generated docs](https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a)
+- ⚛️ [React |](https://reactjs.org/) declarative component-centric UI
+- 📚 [Storybook |](https://storybook.js.org) for UI component development and [auto-generated docs](https://medium.com/storybookjs/storybook-docs-sneak-peak-5be78445094a)
 - <💅🏾> [Styled Components |](https://www.styled-components.com/) for component-scoped styling
 
 Maintaining the system
 
-- 📦 [NPM](https://www.npmjs.com/) for [packaging and distribution](https://blog.hichroma.com/how-packaging-makes-it-dead-simple-to-share-ui-components-29912593539d)
-- ✅ [Chromatic](https://www.chromatic.com/) to prevent UI bugs in components (by Storybook maintainers)
-- 🚥 [GitHub Actions](https://github.com/features/actions) Continuous integration
+- 📦 [NPM |](https://www.npmjs.com/) for [packaging and distribution](https://blog.hichroma.com/how-packaging-makes-it-dead-simple-to-share-ui-components-29912593539d)
+- [Auto |](https://intuit.github.io/auto/)Streamline release workflows and automate publish constantly!
+- ✅ [Chromatic |](https://www.chromatic.com/) to prevent UI bugs in components (by Storybook maintainers)
+- 🚥 [GitHub Actions |](https://github.com/features/actions) Continuous integration
 
 ## Our Approach
 
