@@ -1,6 +1,6 @@
 {
   "name": "ozow-ui",
-  "version": "0.1.0",
+  "version": "0.1.1--canary.1e1f13e.0",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "5.16.5",
