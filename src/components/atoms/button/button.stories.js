@@ -42,6 +42,22 @@ export default {
   },
 };
 
+// ICONS ...............................................................
+export const Icons = (args) => (
+  <Spacer>
+    <Button {...args} icon="delete" variant="danger" label="Delete" />
+    <Button {...args} icon="download" />
+  </Spacer>
+);
+
+Icons.parameters = {
+  docs: {
+    storyDescription: "Material design icons",
+  },
+};
+
+// END SIZES ----------------------------------------------------------
+
 // SIZES ...............................................................
 export const Sizes = (args) => (
   <Spacer>

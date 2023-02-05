@@ -16,8 +16,15 @@ export const ButtonContainer = styled.button`
     variant === "tertiary"
       ? `1px solid ${colors.secondary}`
       : `1px solid ${colors[variant]}`};
+  display: flex;
   padding: ${({ size }) => size && sizes[size]};
-  min-width: 120px;
+  min-width: ${({ icon, label }) => (icon && !label ? "0" : "120px")};
+  align-items: center;
+  justify-content: center;
   background-color: ${({ variant }) => variant && colors[variant]};
   box-sizing: border-box;
+`;
+
+export const IconContiainer = styled.span`
+  margin-right: ${({ icon, label }) => (icon && !label ? "0" : "10px")};
 `;
