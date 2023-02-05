@@ -1,3 +1,16 @@
+# v0.1.10 (Sun Feb 05 2023)
+
+#### 🐛 Bug Fix
+
+- exporting theme [#14](https://github.com/sibabale/ozow-ui/pull/14) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.1.9 (Sun Feb 05 2023)
 
 #### 🐛 Bug Fix
