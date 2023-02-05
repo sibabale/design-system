@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import colors from "../theme/colors.json";
+import colors from "../theme/colors";
 import { Link as ReactLink } from "react-router-dom";
 
 export const Link = styled(ReactLink)`
