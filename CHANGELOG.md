@@ -1,3 +1,17 @@
+# v0.1.7 (Sun Feb 05 2023)
+
+#### 🐛 Bug Fix
+
+- fix: remove non-existant export [#11](https://github.com/sibabale/ozow-ui/pull/11) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+- refactor: exporting the apps theme [#10](https://github.com/sibabale/ozow-ui/pull/10) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.1.1 (Sun Feb 05 2023)
 
 #### 🐛 Bug Fix
