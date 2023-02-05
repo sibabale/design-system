@@ -2,6 +2,29 @@
 
 #### 🐛 Bug Fix
 
+- chore: new release [#9](https://github.com/sibabale/ozow-ui/pull/9) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+- chore: updated node [#8](https://github.com/sibabale/ozow-ui/pull/8) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+- release-script [#7](https://github.com/sibabale/ozow-ui/pull/7) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+- refactor: updating gitignore [#6](https://github.com/sibabale/ozow-ui/pull/6) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+- readme-udpdate [#5](https://github.com/sibabale/ozow-ui/pull/5) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+- Icon button [#4](https://github.com/sibabale/ozow-ui/pull/4) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+- setting up an automated release cycle [#3](https://github.com/sibabale/ozow-ui/pull/3) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### 📝 Documentation
+
+- Refactor [#2](https://github.com/sibabale/ozow-ui/pull/2) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
+# v0.1.1 (Sun Feb 05 2023)
+
+#### 🐛 Bug Fix
+
 - setting up an automated release cycle [#3](https://github.com/sibabale/ozow-ui/pull/3) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
 
 #### ⚠️ Pushed to `main`
