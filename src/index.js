@@ -7,5 +7,5 @@ import * as theme from "./theme/index";
 export { sizes, colors, theme, styles, global };
 
 export * from "./components/atoms/button/button";
-export * from "./components/molecules/nav_bar";
+export * from "./components/molecules/nav_bar/nav_bar";
 export * from "./components/pages/home/home";
