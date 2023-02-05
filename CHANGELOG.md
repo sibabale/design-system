@@ -1,3 +1,16 @@
+# v0.1.8 (Sun Feb 05 2023)
+
+#### 🐛 Bug Fix
+
+- fix-imports [#12](https://github.com/sibabale/ozow-ui/pull/12) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.1.7 (Sun Feb 05 2023)
 
 #### 🐛 Bug Fix
