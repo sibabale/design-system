@@ -1,6 +1,6 @@
 import * as styles from "./styles/global.styles";
 import * as global from "./shared/global";
-import * as theme from "./theme/";
+import * as theme from "./theme/index";
 
 export { theme, styles, global };
 
