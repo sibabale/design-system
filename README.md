@@ -57,34 +57,16 @@ The Storybook design system codifies existing UI components into a central, well
 yarn add --save @sibabale/design-system
 ```
 
-or
-
-```bash
-npm install --save @sibabale/design-system
-```
-
 ## Run
 
 ```bash
 yarn run storybook
 ```
 
-or
-
-```bash
-npm run storybook
-```
-
 ## Test
 
 ```bash
 yarn test-storybook --watch
-```
-
-or
-
-```bash
-npm test-storybook --watch
 ```
 
 ## Build
@@ -95,22 +77,10 @@ npm test-storybook --watch
 yarn run build-storybook
 ```
 
-or
-
-```bash
-npm run build-storybook
-```
-
 - Storybook Docs
 
 ```bash
 yarn run build-storybook-docs
-```
-
-or
-
-```bash
-npm run build-storybook-docs
 ```
 
 ## Deploy
