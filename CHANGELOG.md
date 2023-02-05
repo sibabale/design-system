@@ -1,3 +1,16 @@
+# v0.1.13 (Sun Feb 05 2023)
+
+#### 🐛 Bug Fix
+
+- exporting nav_bar [#17](https://github.com/sibabale/ozow-ui/pull/17) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.1.12 (Sun Feb 05 2023)
 
 #### 🐛 Bug Fix
