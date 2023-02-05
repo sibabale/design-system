@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ButtonContainer } from "./button.styles.js";
+import { IconContiainer, ButtonContainer } from "./button.styles.js";
 
 /**
  * Primary UI component for user interaction
@@ -8,7 +8,15 @@ import { ButtonContainer } from "./button.styles.js";
 export const Button = ({ variant, size, label, icon }) => {
   return (
     <ButtonContainer type="button" icon={icon} size={size} variant={variant}>
-      {icon && icon}
+      {icon && (
+        <IconContiainer
+          className="material-symbols-sharp"
+          icon={icon}
+          label={label}
+        >
+          {icon}
+        </IconContiainer>
+      )}
       {label}
     </ButtonContainer>
   );
@@ -16,9 +24,9 @@ export const Button = ({ variant, size, label, icon }) => {
 
 Button.propTypes = {
   /**
-   * What variant color to use?
+   * Icon name from Material Design
    */
-  variant: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   /**
    * What scale should the button be?
    */
@@ -26,16 +34,20 @@ Button.propTypes = {
   /**
    * Button contents
    */
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   /**
    * Optional click handler
    */
   onClick: PropTypes.func,
+  /**
+   * What variant color to use?
+   */
+  variant: PropTypes.string.isRequired,
 };
 
 Button.defaultProps = {
   size: "medium",
-  label: "Click Me",
+  label: "",
   variant: "primary",
   onClick: undefined,
 };
