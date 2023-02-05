@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import sizes from "../../../theme/sizes.json";
-import colors from "../../../theme/colors.json";
+import sizes from "../../../theme/sizes";
+import colors from "../../../theme/colors";
 
 const buttonColor = (variant) => {
   if (variant === "tertiary") {

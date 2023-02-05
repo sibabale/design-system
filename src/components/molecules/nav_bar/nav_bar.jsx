@@ -13,7 +13,7 @@ import Menu from "../../atoms/icons/menu";
 import DarkMode from "../../atoms/icons/dark_mode";
 
 import Logo from "../../atoms/images/logo/logo";
-import colors from "../../../theme/colors.json";
+import colors from "../../../theme/colors";
 import LightMode from "../../atoms/icons/light_mode";
 
 /**

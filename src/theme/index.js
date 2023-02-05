@@ -1,4 +1,4 @@
-import sizes from "./sizes.json";
-import colors from "./colors.json";
+import sizes from "./sizes";
+import colors from "./colors";
 
 export { colors, sizes };
