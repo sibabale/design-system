@@ -1,6 +1,10 @@
 import React from "react";
 import { AvatarContianer } from "./avatar.styles";
 import PropTypes from "prop-types";
+
+/**
+  An avatar is an object that represents the user's identity on screen
+ */
 export const Avatar = ({ size, image }) => {
   return <AvatarContianer src={image} size={size} />;
 };

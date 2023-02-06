@@ -14,7 +14,7 @@ export default {
       control: { type: "string" },
     },
   },
-  parameteres: {
+  parameters: {
     componentSubtitle:
       "An image or figure representing a particular person or a business.",
   },
