@@ -28,11 +28,12 @@ export default {
       },
       options: [
         "danger",
+        "success",
         "warning",
         "primary",
-        "secondary",
         "tertiary",
-        "success",
+        "secondary",
+        "transparent",
       ],
     },
   },
@@ -85,6 +86,7 @@ export const Variants = (args) => (
     <Button {...args} variant="danger" label="Danger" />
     <Button {...args} variant="warning" label="Warning" />
     <Button {...args} variant="success" label="Success" />
+    <Button {...args} variant="transparent" label="Transparent" />
   </Spacer>
 );
 

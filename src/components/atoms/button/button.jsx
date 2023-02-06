@@ -42,7 +42,15 @@ Button.propTypes = {
   /**
    * What variant color to use?
    */
-  variant: PropTypes.string.isRequired,
+  variant: PropTypes.oneOf([
+    "danger",
+    "success",
+    "warning",
+    "primary",
+    "tertiary",
+    "secondary",
+    "transparent",
+  ]).isRequired,
 };
 
 Button.defaultProps = {
