@@ -3,7 +3,7 @@ import sizes from "../../../theme/sizes";
 import colors from "../../../theme/colors";
 
 const buttonColor = (variant) => {
-  if (variant === "tertiary") {
+  if (variant === "tertiary" || variant === "transparent") {
     return colors.text;
   } else {
     return colors.text_inverted;
@@ -15,7 +15,10 @@ export const ButtonContainer = styled.button`
   border: ${({ variant }) =>
     variant === "tertiary"
       ? `1px solid ${colors.secondary}`
+      : variant === "transparent"
+      ? "none"
       : `1px solid ${colors[variant]}`};
+  cursor: pointer;
   display: flex;
   padding: ${({ size }) => size && sizes[size]};
   min-width: ${({ icon, label }) => (icon && !label ? "0" : "120px")};

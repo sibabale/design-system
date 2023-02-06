@@ -6,6 +6,7 @@ const colors = {
   success: "#21C94E",
   tertiary: "#FFFFFF",
   secondary: "#000000",
+  transparent: "transparent",
   text_inverted: "#FFFFFF",
 };
 
