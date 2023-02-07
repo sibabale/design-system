@@ -1,3 +1,21 @@
+# v0.2.0 (Tue Feb 07 2023)
+
+#### 🚀 Enhancement
+
+- Header [#20](https://github.com/sibabale/ozow-ui/pull/20) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### 🐛 Bug Fix
+
+- transparent-button [#19](https://github.com/sibabale/ozow-ui/pull/19) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+- avatar [#18](https://github.com/sibabale/ozow-ui/pull/18) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.1.13 (Sun Feb 05 2023)
 
 #### 🐛 Bug Fix
