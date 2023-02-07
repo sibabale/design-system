@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { expect } from "@storybook/jest";
 import { userEvent, within } from "@storybook/testing-library";
 
-import { Button } from "./button";
+import Button from "./button";
 
 export default {
   title: "Design System/Atoms/Button",

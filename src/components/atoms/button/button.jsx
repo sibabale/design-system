@@ -5,7 +5,7 @@ import { IconContiainer, ButtonContainer } from "./button.styles.js";
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ variant, size, label, icon }) => {
+const Button = ({ size, label, icon, variant }) => {
   return (
     <ButtonContainer type="button" icon={icon} size={size} variant={variant}>
       {icon && (
@@ -59,3 +59,5 @@ Button.defaultProps = {
   variant: "primary",
   onClick: undefined,
 };
+
+export default Button;

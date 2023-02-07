@@ -3,7 +3,7 @@ import styled from "styled-components";
 const avatarSizes = (size) => {
   switch (size) {
     case "small":
-      return "40px";
+      return "50px";
     case "large":
       return "80px";
     default:
