@@ -1,6 +1,7 @@
 import React from "react";
-import { AvatarContianer } from "./avatar.styles";
 import PropTypes from "prop-types";
+
+import { AvatarContianer } from "./avatar.styles";
 
 /**
   An avatar is an object that represents the user's identity on screen
