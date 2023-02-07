@@ -8,6 +8,10 @@ import Image from "../../../assets/images/avatar.avif";
 export default {
   title: "Design System/Molecules/Card",
   component: CardComponent,
+  argTypes: {
+    header: { controls: { type: "text" } },
+    rounded: { controls: { type: "boolean" } },
+  },
 };
 
 const Template = (args) => <CardComponent {...args} />;
