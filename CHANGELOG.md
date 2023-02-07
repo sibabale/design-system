@@ -1,3 +1,16 @@
+# v0.4.0 (Tue Feb 07 2023)
+
+#### 🚀 Enhancement
+
+- card-component [#21](https://github.com/sibabale/ozow-ui/pull/21) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.2.0 (Tue Feb 07 2023)
 
 #### 🚀 Enhancement
