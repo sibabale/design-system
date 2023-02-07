@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Home as HomePage } from "./home";
 import colors from "../../../theme/colors";
 import NavBar from "../../molecules/nav_bar/nav_bar";
-import { Button } from "../../atoms/button/button";
+import Button from "../../atoms/button/button";
 import LightThemePhoneImage from "../../../assets/images/light_theme_phone.png";
 
 export default {
