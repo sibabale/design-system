@@ -1,3 +1,16 @@
+# v0.6.0 (Wed Feb 08 2023)
+
+#### 🚀 Enhancement
+
+- pill [#23](https://github.com/sibabale/ozow-ui/pull/23) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.5.0 (Wed Feb 08 2023)
 
 #### 🚀 Enhancement
