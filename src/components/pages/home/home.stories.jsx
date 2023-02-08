@@ -70,7 +70,7 @@ const ButtonContainer = styled.div`
 `;
 
 const HighlightedText = styled.span`
-  color: ${colors.primary};
+  color: ${colors.base.primary};
 `;
 
 const MainSection = styled.section`

@@ -33,12 +33,12 @@ export const LineChart = (args) => {
         {
           label: "Completed",
           data: [0, 20, 40, 13, 25, 19, 10, 54, 34, 44, 3],
-          borderColor: colors.primary,
+          borderColor: colors.base.primary,
         },
         {
           label: "Dataset 2",
           data: [0, 40, 12, 30, 32, 39, 4, 49, 10, 13, 44, 3],
-          borderColor: colors.accent,
+          borderColor: colors.base.accent,
         },
       ]}
       lineTension={0.3}
