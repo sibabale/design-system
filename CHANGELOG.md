@@ -1,3 +1,16 @@
+# v0.7.0 (Wed Feb 08 2023)
+
+#### 🚀 Enhancement
+
+- sidebar [#24](https://github.com/sibabale/ozow-ui/pull/24) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.6.0 (Wed Feb 08 2023)
 
 #### 🚀 Enhancement
