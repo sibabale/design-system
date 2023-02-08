@@ -37,6 +37,6 @@ export const RightContianer = styled.div`
 `;
 
 export const HightLightedText = styled.span`
-  color: ${colors.primary};
+  color: ${colors.base.primary};
   font-weight: bold;
 `;

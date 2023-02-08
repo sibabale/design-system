@@ -4,9 +4,9 @@ import colors from "../../../theme/colors";
 
 const buttonColor = (variant) => {
   if (variant === "tertiary" || variant === "transparent") {
-    return colors.text;
+    return colors.copy.text;
   } else {
-    return colors.text_inverted;
+    return colors.copy.text_inverted;
   }
 };
 
@@ -17,14 +17,14 @@ export const ButtonContainer = styled.button`
       ? `1px solid ${colors.secondary}`
       : variant === "transparent"
       ? "none"
-      : `1px solid ${colors[variant]}`};
+      : `1px solid ${colors.base[variant]}`};
   cursor: pointer;
   display: flex;
   padding: ${({ size }) => size && sizes[size]};
   min-width: ${({ icon, label }) => (icon && !label ? "0" : "120px")};
   align-items: center;
   justify-content: center;
-  background-color: ${({ variant }) => variant && colors[variant]};
+  background-color: ${({ variant }) => variant && colors.base[variant]};
   box-sizing: border-box;
 `;
 

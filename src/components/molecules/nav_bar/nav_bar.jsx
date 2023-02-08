@@ -25,10 +25,10 @@ export const NavBar = ({ showLogo, links, children }) => {
     <NavBarContainer>
       {showLogo && (
         <Logo
-          color={colors.text_inverted}
+          color={colors.copy.text_inverted}
           width={101}
           height={90}
-          backgroundColor={colors.primary}
+          backgroundColor={colors.base.primary}
         />
       )}
 
@@ -44,11 +44,11 @@ export const NavBar = ({ showLogo, links, children }) => {
         <ThemeIconContainer>
           {theme === "light_theme" ? (
             <div onClick={() => setTheme("dark_theme")}>
-              <DarkMode backgroundColor={colors.primary} />
+              <DarkMode backgroundColor={colors.base.primary} />
             </div>
           ) : (
             <div onClick={() => setTheme("light_theme")}>
-              <LightMode backgrounColor={colors.primary} />
+              <LightMode backgrounColor={colors.base.primary} />
             </div>
           )}
         </ThemeIconContainer>

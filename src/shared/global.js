@@ -20,6 +20,7 @@ export const bodyStyles = css`
   p,
   a,
   li,
+  div,
   small,
   span {
     margin: 0;
