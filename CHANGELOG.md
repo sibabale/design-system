@@ -1,3 +1,16 @@
+# v0.5.0 (Wed Feb 08 2023)
+
+#### 🚀 Enhancement
+
+- line-chart [#22](https://github.com/sibabale/ozow-ui/pull/22) ([@zbisj](https://github.com/zbisj) [@sibabale](https://github.com/sibabale))
+
+#### Authors: 2
+
+- [@sibabale](https://github.com/sibabale)
+- zbis ([@zbisj](https://github.com/zbisj))
+
+---
+
 # v0.4.0 (Tue Feb 07 2023)
 
 #### 🚀 Enhancement
