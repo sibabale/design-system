@@ -7,6 +7,10 @@ export default {
     links: { control: { type: "object" } },
   },
   component: SidebarComponent,
+  parameters: {
+    componentSubtitle:
+      "A sidebar enables app navigation and provides quick access to top-level collections of content.",
+  },
 };
 
 export const Sidebar = (args) => (
