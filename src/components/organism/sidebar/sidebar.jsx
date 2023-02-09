@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Icon, Logo, LinkItem, SidebarContianer } from "./sidebar.styles";
 
+/**
+ Main navigation element within protected routes of an application
+ */
 export const Sidebar = ({ logo, links }) => {
   const [active, setActive] = useState(0);
 
