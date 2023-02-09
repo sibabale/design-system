@@ -22,10 +22,11 @@ export const ButtonContainer = styled.button`
   display: flex;
   padding: ${({ size }) => size && sizes[size]};
   min-width: ${({ icon, label }) => (icon && !label ? "0" : "120px")};
+  box-sizing: border-box;
   align-items: center;
+  border-radius: ${({ rounded }) => (rounded ? "10px" : 0)};
   justify-content: center;
   background-color: ${({ variant }) => variant && colors.base[variant]};
-  box-sizing: border-box;
 `;
 
 export const IconContiainer = styled.span`
