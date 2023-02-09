@@ -1,12 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { PillContianer } from "./pill.styles";
+import { IconContiainer } from "../../../styles/global.styles";
 
 /**
   A pill is a compact label that appears beside a primary interface area which is used to represent status or metadata for that area.
  */
-export const Pill = ({ text, rounded, variant }) => (
+export const Pill = ({ icon, text, rounded, variant }) => (
   <PillContianer rounded={rounded} variant={variant}>
+    {icon && (
+      <IconContiainer className="material-symbols-sharp">{icon}</IconContiainer>
+    )}
     {text}
   </PillContianer>
 );
