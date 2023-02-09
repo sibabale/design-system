@@ -11,7 +11,7 @@ import {
   Chart as ChartJS,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-
+import colors from "../../../theme/colors";
 ChartJS.register(
   Title,
   Legend,
@@ -47,7 +47,6 @@ export const LineChart = ({ title, labels, datasets, lineTension }) => {
         backgroundColor: "rgba(0,0,0,0)",
       },
     },
-    responsive: true,
     plugins: {
       legend: {
         align: "start",
@@ -83,6 +82,8 @@ export const LineChart = ({ title, labels, datasets, lineTension }) => {
         display: false,
       },
     },
+    responsive: true,
+    maintainAspectRatio: false,
   };
 
   return <Line options={options} data={data} />;
@@ -95,4 +96,16 @@ LineChart.propTypes = {
 LineChart.defaultProps = {
   labels: [],
   lineTension: 0.8,
+  datasets: [
+    {
+      label: "Completed",
+      data: [0, 20, 40, 13, 25, 19, 10, 54, 34, 44, 3],
+      borderColor: colors.base.primary,
+    },
+    {
+      label: "Dataset 2",
+      data: [0, 40, 12, 30, 32, 39, 4, 49, 10, 13, 44, 3],
+      borderColor: colors.base.accent,
+    },
+  ],
 };
