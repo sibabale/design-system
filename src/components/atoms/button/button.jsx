@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { IconContiainer } from "../../../styles/global.styles";
+import { IconContainer } from "../../../styles/global.styles";
 import { ButtonContainer } from "./button.styles.js";
 
 /**
@@ -16,13 +16,13 @@ const Button = ({ size, icon, label, rounded, variant }) => {
       variant={variant}
     >
       {icon && (
-        <IconContiainer
+        <IconContainer
           className="material-symbols-sharp"
           icon={icon}
           label={label}
         >
           {icon}
-        </IconContiainer>
+        </IconContainer>
       )}
       {label}
     </ButtonContainer>

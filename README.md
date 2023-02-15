@@ -4,7 +4,7 @@
 <small style="font-size: 10px">Art by <a href="https://dribbble.com/codycai">Codi Cai</a>
   </small>
 
-[![NPM](https://img.shields.io/npm/v/@storybook/design-system.svg)](https://www.npmjs.com/package/@storybook/design-system) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/ozow-ui.svg)](https://www.npmjs.com/package/ozow-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ##### Ozow UI is a design system that is meant to be a reusable set of components that can be quickly used to build and scaffold any application. Current it is used to demo a UI library for [Ozow](https://ozow.com).
 
@@ -20,8 +20,8 @@ Building components
 
 Maintaining the system
 
+- [Auto |](https://intuit.github.io/auto/) Streamline release workflows and automate publishing constantly!
 - 📦 [NPM |](https://www.npmjs.com/) for [packaging and distribution](https://blog.hichroma.com/how-packaging-makes-it-dead-simple-to-share-ui-components-29912593539d)
-- [Auto |](https://intuit.github.io/auto/)Streamline release workflows and automate publish constantly!
 - ✅ [Chromatic |](https://www.chromatic.com/) to prevent UI bugs in components (by Storybook maintainers)
 - 🚥 [GitHub Actions |](https://github.com/features/actions) Continuous integration
 
@@ -48,19 +48,27 @@ The Storybook design system codifies existing UI components into a central, well
 
 - Rewrite all new components from scratch
 - Overhaul the visual design of components
-- Typescript (the consumer apps don't use it)
 - Compete with more general design systems like ANT or Material.
+
+## Run Locally
+
+- `git clone git@github.com:sibabale/ozow-ui.git YOUR_APPS_NAME`
+  or
+- `git clone https://github.com/sibabale/ozow-ui.git YOUR_APPS_NAME`
+- `yarn install`
+- `git checkout -b YOUR_BRANCH_NAME`
+- `yarn run storybook`
 
 ## Install
 
 ```bash
-yarn add --save @sibabale/design-system
+yarn add --save ozow-ui
 ```
 
-## Run
+## Usage
 
 ```bash
-yarn run storybook
+import { Button } from "ozow-ui"
 ```
 
 ## Test
@@ -71,27 +79,29 @@ yarn test-storybook --watch
 
 ## Build
 
-- Storybook
+In order to build and release a copy of this project you will need to create an account with [npm](https://www.npmjs.com/) and [chromatic](https://www.chromatic.com/).
+
+- `yarn init --scope=@YOUR_NPM_USERNAME`
+- `touch .env`
+- Open the `.env` file and paste the following tokens
 
 ```bash
-yarn run build-storybook
+GH_TOKEN=YOUR_GITHUB_TOKEN
+NPM_TOKEN=YOUR_NPM_TOKEN
+CHROMATIC_PROJECT_TOKEN=YOUR_CHROMATIC_TOKEN
 ```
 
-- Storybook Docs
-
-```bash
-yarn run build-storybook-docs
-```
+- `yarn build`
 
 ## Deploy
+
+<!-- TODO: Detail the whole CI process -->
 
 - Chromatic
 
 ```bash
 npm run chromatic
 ```
-
-NB: Create a .env file and add a `CHROMATIC_PROJECT_TOKEN`
 
 ## License
 

@@ -5,7 +5,7 @@ export const CardContainer = styled.div`
   border: 2px solid ${colors.base["tertiary-200"]};
   height: 100%;
   padding: 20px;
-  display: inline-block;
+  /* display: inline-block; */
   border-radius: ${({ rounded }) => (rounded ? "5px" : 0)};
 `;
 
