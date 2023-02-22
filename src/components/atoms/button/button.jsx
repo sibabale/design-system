@@ -1,21 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { IconContiainer, ButtonContainer } from "./button.styles.js";
+import { IconContainer } from "../../../styles/global.styles";
+import { ButtonContainer } from "./button.styles.js";
 
 /**
  * Primary UI component for user interaction
  */
-const Button = ({ size, label, icon, variant }) => {
+const Button = ({ size, icon, label, rounded, variant }) => {
   return (
-    <ButtonContainer type="button" icon={icon} size={size} variant={variant}>
+    <ButtonContainer
+      type="button"
+      icon={icon}
+      size={size}
+      rounded={rounded}
+      variant={variant}
+    >
       {icon && (
-        <IconContiainer
+        <IconContainer
           className="material-symbols-sharp"
           icon={icon}
           label={label}
         >
           {icon}
-        </IconContiainer>
+        </IconContainer>
       )}
       {label}
     </ButtonContainer>
@@ -35,6 +42,10 @@ Button.propTypes = {
    * Button contents
    */
   label: PropTypes.string,
+  /**
+   * Round the corners of the button
+   */
+  rounded: PropTypes.bool,
   /**
    * Optional click handler
    */
@@ -56,6 +67,7 @@ Button.propTypes = {
 Button.defaultProps = {
   size: "medium",
   label: "",
+  rounded: false,
   variant: "primary",
   onClick: undefined,
 };

@@ -1,27 +1,35 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { Icon, Logo, LinkItem, SidebarContianer } from "./sidebar.styles";
+import {
+  Icon,
+  Logo,
+  LinkItem,
+  LinkItems,
+  SidebarContianer,
+} from "./sidebar.styles";
 
 /**
  Main navigation element within protected routes of an application
  */
-export const Sidebar = ({ logo, links }) => {
+export const Sidebar = ({ logo, links, className }) => {
   const [active, setActive] = useState(0);
 
   return (
-    <SidebarContianer>
-      <Logo src={logo} alt="Logo of a company" />
-      {links.map((link, index) => (
-        <LinkItem
-          key={index}
-          to={link.route}
-          active={active === index ? true : false}
-          onClick={() => setActive(index)}
-        >
-          <Icon className="material-symbols-sharp">{link.icon}</Icon>
-          {link.text}
-        </LinkItem>
-      ))}
+    <SidebarContianer className={className}>
+      {logo && <Logo src={logo} alt="Logo of a company" />}
+      <LinkItems>
+        {links.map((link, index) => (
+          <LinkItem
+            key={index}
+            to={link.route}
+            active={active === index ? true : false}
+            onClick={() => setActive(index)}
+          >
+            <Icon className="material-symbols-sharp">{link.icon}</Icon>
+            {link.text}
+          </LinkItem>
+        ))}
+      </LinkItems>
     </SidebarContianer>
   );
 };

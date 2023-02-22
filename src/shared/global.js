@@ -6,6 +6,9 @@ export const fontUrl =
   "https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900";
 
 export const bodyStyles = css`
+  body {
+    /* padding: 0; */
+  }
   /* Same as before */
   h1,
   h2,

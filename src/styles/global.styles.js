@@ -13,3 +13,7 @@ export const Link = styled(ReactLink)`
       format("truetype");
   }
 `;
+
+export const IconContainer = styled.span`
+  margin-right: ${({ icon, label }) => (icon && !label ? "0" : "10px")};
+`;

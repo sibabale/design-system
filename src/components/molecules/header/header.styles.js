@@ -3,9 +3,10 @@ import colors from "../../../theme/colors";
 
 export const HeaderContianer = styled.header`
   display: flex;
-  padding: 10px;
+  padding: 10px 0;
   align-items: center;
   justify-content: space-between;
+  background-color: ${colors.base.tertiary};
 
   /* Mobile Phones */
   @media screen and (max-width: 427px) {

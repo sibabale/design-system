@@ -7,7 +7,7 @@ export const Card = ({ header, rounded, children }) => {
   return (
     <CardContainer rounded={rounded}>
       {header && <Header>{header}</Header>}
-      <div>{children}</div>
+      {children}
     </CardContainer>
   );
 };

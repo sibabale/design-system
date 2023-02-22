@@ -23,5 +23,5 @@ export const Sidebar = (args) => (
       { text: "Transaction", icon: "receipt_long", route: "receipt_long" },
       { text: "Logout", icon: "logout", route: "logout" },
     ]}
-  ></SidebarComponent>
+  />
 );

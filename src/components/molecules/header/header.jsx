@@ -14,9 +14,9 @@ import {
   HightLightedText,
 } from "./header.styles";
 
-export const Header = ({ children }) => {
+export const Header = ({ children, className }) => {
   return (
-    <HeaderContianer>
+    <HeaderContianer className={className}>
       <LeftContianer>
         <h1>
           Welcome to <HightLightedText>Ozow</HightLightedText>
