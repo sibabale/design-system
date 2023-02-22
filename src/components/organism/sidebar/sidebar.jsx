@@ -8,6 +8,9 @@ import {
   SidebarContianer,
 } from "./sidebar.styles";
 
+/**
+ Main navigation element within protected routes of an application
+ */
 export const Sidebar = ({ logo, links, className }) => {
   const [active, setActive] = useState(0);
 
