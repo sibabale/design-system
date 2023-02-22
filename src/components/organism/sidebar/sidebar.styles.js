@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "../../../styles/global.styles";
 
 export const SidebarContianer = styled.aside`
+  width: 11%;
   height: 100vh;
   display: flex;
   flex-direction: column;
